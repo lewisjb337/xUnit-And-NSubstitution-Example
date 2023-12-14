@@ -17,6 +17,7 @@ public class ExampleTest
         _sut = new ExampleClass(_loggerMock);
     }
 
+    // This should fail test
     [Fact]
     public void MultiplyValues_ShouldLogCriticalAndThrow_WhenNullEntityProvided()
     {
@@ -34,6 +35,7 @@ public class ExampleTest
         _loggerMock.Received().Log(LogLevel.Critical, expectedMessage);
     }
 
+    // This should pass test
     [Theory]
     [InlineData(5, 20, 100)]
     [InlineData(2, 31, 62)]
