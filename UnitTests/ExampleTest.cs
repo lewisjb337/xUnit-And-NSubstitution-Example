@@ -24,7 +24,7 @@ public class ExampleTest
         // Arrange
         Example entity = null;
 
-        var expectedMessage = "Failed to multiple 0 by 0";
+        var expectedMessage = "Failed to multiply 0 by 0";
 
         // Act
         var resultAction = () => _sut.MultiplyValues(entity);
