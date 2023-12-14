@@ -21,7 +21,7 @@ public class ExampleClass
         }
         catch (Exception e)
         {
-            _logger.LogCritical(e, $"Failed to multiple {data.ValueOne} by {data.ValueTwo}");
+            _logger.LogCritical(e, $"Failed to multiply {data.ValueOne} by {data.ValueTwo}");
             throw;
         }
     }
