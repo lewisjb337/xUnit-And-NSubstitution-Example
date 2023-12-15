@@ -14,7 +14,7 @@ namespace UnitTests;
 
 // If we need to group tests together, we can do so with the Trait attribute
 [Trait("Name", "Category")]
-public class ExampleTest
+public class ExampleTest : IDisposable
 {
     private ExampleClass _sut;
     private ILogger<ExampleClass> _loggerMock = Substitute.For<ILogger<ExampleClass>>();
@@ -59,4 +59,9 @@ public class ExampleTest
     // If we want to skip over a test, we can do so using the following attribute
     [Fact(Skip = "This test is skipped")]
     public void SkippedTest() {}
+
+    public void Dispose()
+    {
+        // Cleanup
+    }
 }
