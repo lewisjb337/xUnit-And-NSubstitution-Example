@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExampleProject
-build_property.ProjectDir = C:\Users\lewis.baxter\source\repos\api\xUnit Testing Example\ExampleProject\
+build_property.ProjectDir = C:\Users\lewis.baxter\Documents\Repositories\xUnit-And-NSubstitution-Example\ExampleProject\

@@ -158,11 +158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lewis.baxter\\source\\repos\\api\\xUnit Testing Example\\ExampleProject\\ExampleProject.csproj",
+      "projectUniqueName": "C:\\Users\\lewis.baxter\\Documents\\Repositories\\xUnit-And-NSubstitution-Example\\ExampleProject\\ExampleProject.csproj",
       "projectName": "ExampleProject",
-      "projectPath": "C:\\Users\\lewis.baxter\\source\\repos\\api\\xUnit Testing Example\\ExampleProject\\ExampleProject.csproj",
+      "projectPath": "C:\\Users\\lewis.baxter\\Documents\\Repositories\\xUnit-And-NSubstitution-Example\\ExampleProject\\ExampleProject.csproj",
       "packagesPath": "C:\\Users\\lewis.baxter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lewis.baxter\\source\\repos\\api\\xUnit Testing Example\\ExampleProject\\obj\\",
+      "outputPath": "C:\\Users\\lewis.baxter\\Documents\\Repositories\\xUnit-And-NSubstitution-Example\\ExampleProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,5 @@
 ﻿using ExampleProject;
 using FluentAssertions;
-using Microsoft.Extensions.Logging;
 using NSubstitute;
 using Xunit;
 using static ExampleProject.ExampleClass;
@@ -9,15 +8,8 @@ namespace UnitTests;
 
 public class ExampleTest
 {
-    private ExampleClass _sut;
-    private ILogger<ExampleClass> _loggerMock = Substitute.For<ILogger<ExampleClass>>();
+    private IExampleClass _sut = Substitute.For<IExampleClass>();
 
-    public ExampleTest()
-    {
-        _sut = new ExampleClass(_loggerMock);
-    }
-
-    // This should pass test
     [Theory]
     [InlineData(5, 20, 100)]
     [InlineData(2, 31, 62)]

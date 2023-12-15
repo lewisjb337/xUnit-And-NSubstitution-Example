@@ -2,7 +2,7 @@
 
 namespace ExampleProject;
 
-public class ExampleClass
+public class ExampleClass : IExampleClass
 {
     private readonly ILogger<ExampleClass> _logger;
 
