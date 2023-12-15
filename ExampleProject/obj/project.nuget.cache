@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+pKMSJ9GLSeP3Icv0aQB27ywjdPlOcasN8UdrDBUYK45gzbbLG7V+0mIZq1dm0vYmIAIVIuWMQagZ6mAHyAAUw==",
+  "dgSpecHash": "HXppm83VdbsB8nIOLww/jaCpfdMlWR9t0a0GZQsYr0C0/5lWnYMZCv6kglIAw6f+00s3Fmu4QqLc/UQp24y2CQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lewis.baxter\\Documents\\Repositories\\xUnit-And-NSubstitution-Example\\ExampleProject\\ExampleProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lewis.baxter\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\lewis.baxter\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\lewis.baxter\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\lewis.baxter\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\lewis.baxter\\.nuget\\packages\\nsubstitute\\5.1.0\\nsubstitute.5.1.0.nupkg.sha512",
+    "C:\\Users\\lewis.baxter\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

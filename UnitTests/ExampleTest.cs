@@ -2,14 +2,16 @@
 using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
-using Xunit;
 using Xunit.Abstractions;
 using static ExampleProject.ExampleClass;
+using ExampleProject.Extensions;
 
 namespace UnitTests;
 
 /// <summary>
 /// In order to run a test, right click on a test name and click 'Run Tests', this should display a menu where all test cases can be seen.
+/// Tests that pass will show a green tick and those that failed will show a red cross, you can run tests manually or click the 'Debug'
+/// option to run tests that allow breakpoints within the tests to be hit.
 /// </summary>
 
 // If we need to group tests together, we can do so with the Trait attribute
@@ -25,6 +27,24 @@ public class ExampleTest : IDisposable
     {
         _sut = new ExampleClass(_loggerMock);
         _outputHelper = outputHelper;
+    }
+
+    [Fact]
+    public void MultiplyValues_ShouldLogCriticalAndThrow_WhenNullListProvided()
+    {
+        // Arrange
+        Example entity = null;
+
+        var expectedMessage = "Failed to multiply values";
+
+        // Act
+        var resultAction = () => _sut.MultiplyValues(entity);
+
+        // Assert
+        resultAction.Should()
+            .Throw<NullReferenceException>();
+
+        _loggerMock.VerifyLogged(LogLevel.Critical, expectedMessage, typeof(NullReferenceException));
     }
 
     // If we want to add multiple tests, we can do so using the InlineData attribute
