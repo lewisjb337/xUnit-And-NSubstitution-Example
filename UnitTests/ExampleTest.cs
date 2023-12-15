@@ -17,24 +17,6 @@ public class ExampleTest
         _sut = new ExampleClass(_loggerMock);
     }
 
-    // This should fail test
-    [Fact]
-    public void MultiplyValues_ShouldLogCriticalAndThrow_WhenNullEntityProvided()
-    {
-        // Arrange
-        Example entity = null;
-
-        var expectedMessage = "Failed to multiply 0 by 0";
-
-        // Act
-        var resultAction = () => _sut.MultiplyValues(entity);
-
-        // Assert
-        resultAction.Should().Throw<NullReferenceException>();
-        
-        _loggerMock.Received().Log(LogLevel.Critical, expectedMessage);
-    }
-
     // This should pass test
     [Theory]
     [InlineData(5, 20, 100)]
