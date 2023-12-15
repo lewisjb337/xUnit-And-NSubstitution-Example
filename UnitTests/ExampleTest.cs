@@ -8,6 +8,9 @@ using static ExampleProject.ExampleClass;
 
 namespace UnitTests;
 
+/// <summary>
+/// In order to run a test, right click on a test name and click 'Run Tests', this should display a menu where all test cases can be seen.
+/// </summary>
 
 // If we need to group tests together, we can do so with the Trait attribute
 [Trait("Name", "Category")]
